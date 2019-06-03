@@ -179,6 +179,7 @@ export PATH=/data/content/RNAseq/dtu/stringtie/stringtie-1.3.5.Linux_x86_64:$PAT
 export PATH=/data/content/RNAseq/dtu/Results/gffcompare/gffcompare-0.10.8.Linux_x86_64:$PATH
 export PATH=/data/content/pandoc-2.7.1/bin/:$PATH
 export PATH=/data/content/RNAseq/dtu/R-3.5.3/bin:$PATH
+export PATH=/data/content/IGV_Linux_2.5.3-7/:$PATH
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
