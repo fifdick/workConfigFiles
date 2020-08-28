@@ -20,7 +20,7 @@ endif
 " Required:
 call plug#begin(expand('~/.config/nvim/plugged'))
 
-"let g:python3_host_prog = '/Home/siv30/fdi043/anaconda3/bin/python3.6'
+let g:python3_host_prog = '/usr/bin/python3.8'
 "*****************************************************************************
 "" Plug install packages
 "*****************************************************************************
@@ -37,7 +37,8 @@ Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 Plug 'kyoz/purify'
 Plug 'jalvesaq/Nvim-R'
-
+Plug 'jalvesaq/southernlights'
+Plug 'wdhg/dragon-energy'
 "Plug 'rstacruz/vim-closer'
 "Plug 'tpope/vim-commentary'
 "Plug 'tpope/vim-fugitive'
@@ -72,11 +73,12 @@ let NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
 let R_rconsole_width = 1000
 
 " show arguments for functions during omnicompletion
-"let R_show_args = 1
+let R_show_args = 1
 
 " Don't expand a dataframe to show columns by default
-"let R_objbr_opendf = 1
+let R_objbr_opendf = 1
 
+let R_hi_fun_globenv = 0
 " Press the space bar to send lines and selection to R console
 vmap <Space> <Plug>RDSendSelection
 nmap <Space> <Plug>RDSendLine
@@ -85,12 +87,12 @@ nmap <Space> <Plug>RDSendLine
 
 autocmd vimenter * NERDTree
 
-:set guicursor=
+":set guicursor=
 " Workaround some broken plugins which set guicursor indiscriminately.
-:autocmd OptionSet guicursor noautocmd set guicursor=
+":autocmd OptionSet guicursor noautocmd set guicursor=
 
-"let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
-"let R_path = '/usr/bin/'
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
+let R_path = '/usr/bin/'
 "let R_path = '/home/fiona/'
 
 
@@ -107,3 +109,4 @@ inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
 inoremap {}     {}
+colorscheme pablo

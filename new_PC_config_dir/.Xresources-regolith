@@ -1,3 +1,4 @@
+
 i3-wm.focus_follows_mouse: yes
 i3-wm.bar.position:	top
 i3-wm.gaps.inner.size:	 25
@@ -8,12 +9,27 @@ i3-wm.workspace.03.name:	3: Files
 i3-wm.workspace.04.name:	4: YG
 i3-wm.workspace.05.name:	5: DTU_PD
 i3-wm.workspace.06.name:	6: Social
-i3-wm.bar.statusline.color: #33FFB5
-i3-wm.bar.background.color: #505775
-i3-wm.bar.separator.color: #08ADAD
-i3-wm.bar.workspace.inactive.background.color: #08ADAD
+i3-wm.bar.statusline.color: #f1faee
+i3-wm.bar.background.color: #f1faee
+i3-wm.bar.separator.color: #a8dadc
+i3xrocks.label.color: #1d3557
+i3xrocks.value.color: #457b9d
+i3-wm.bar.workspace.inactive.border.color: #f1faee
+i3-wm.bar.workspace.inactive.background.color: #457b9d
 i3-wm.bar.workspace.active.background.color: #E672D0
-i3-wm.bar.workspace.focused.background.color: #E672D0
-i3-wm.bar.separator: "|"
+i3-wm.bar.workspace.focused.background.color: #1d3557
+i3-wm.bar.workspace.focused.border.color: #f1faee
+i3-wm.bar.workspace.focused.text.color: #ffffff
+i3xrocks.nominal: #e63946
+i3xrocks.critical.color: #e63946
+i3xrocks.warning: #e63946
+i3-wm.bar.workspace.inactive.text.color: #ffffff
+i3-wm.bar.separator: "||"
 gnome.wallpaper: /usr/share/backgrounds/brad-huchteman-stone-mountain.jpg
-
+i3xrocks.value.font: pango:Source Code Pro Medium 13, Material Design Icons 13
+gnome.gtk.theme: Sweet-Dark
+gnome.icon.theme: Breeze Chameleon Dark
+i3-wm.bar.trayoutput: primary
+i3-wm.program.1 spotify
+i3-wm.program.2 google-chrome
+i3-wm.program.launcher.app: rofi -show drun -show-icons -theme /etc/regolith/styles/lascaille/rofi.rasi
